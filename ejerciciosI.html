@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Ejercicios de Lógica de Programación</title>
+    </head>
+    <body>
+        <h2>Ejercicios de Lógica de Programación - JS</h2>
+        <script>
+            //EJERCICIO UNO
+            console.log("Ejercicio Uno");
+
+            const text = cadena => {
+                if (typeof cadena !== 'string'){
+                  throw Error ("El valor ingresado no es una cadena de texto");
+                }
+                return cadena.length;
+            }
+
+            let resultado = text("Hola, Mundo");
+            console.log("El largo de la cadena es: " + resultado);
+
+            //EJERCICIO DOS
+            console.log("Ejercicio dos");
+
+            const textDiv = cadena2 => {
+              if (typeof cadena2 !== 'string'){
+                throw Error ("El valor ingresado no es una cadena de texto");
+              }
+              return cadena2.slice(0, -3);
+            }
+
+            let cadenaDividida = textDiv("Rhysand");
+            console.log(cadenaDividida);
+
+
+            //EJERCICIO TRES
+            console.log("Ejercicio tres");
+
+            const textSplit = cadena3 => {
+              if (typeof cadena3 !== 'string'){
+                throw Error ("El valor ingresado no es una cadena de texto");
+              }
+              return cadena3.split(" ", 5);
+            }
+
+            let cadenaPartida = textSplit("Hola, gente como están? todo bien?");
+            console.log(cadenaPartida);
+
+            //EJECICIO CUATRO 
+            console.log("Ejercicio cuatro");
+
+            const textRepeat = cadena4 => {
+              if (typeof cadena4 !== 'string'){
+                throw Error ("El valor ingresado no es una cadena de texto");
+              }
+              return cadena4.repeat(5);
+            }
+
+            let textoRepetido = textRepeat("Hello, everyone. ");
+            console.log(textoRepetido);
+        </script>
+    </body>
+</html>
